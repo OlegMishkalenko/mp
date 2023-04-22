@@ -1,0 +1,120 @@
+.section__main {
+    position: relative;
+}
+.video__main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    filter:  contrast(200%) ;
+}
+
+.container__main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+    height: 100vh;
+    background-image: radial-gradient( #000000d0, #00000000, #00000000);
+}
+.h__main {
+    margin: 7rem 0 0 0 ;
+    font-size: 2.5rem;
+    letter-spacing: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+    text-shadow: 0 0 .3rem rgba(255, 255, 255, 0.1);
+}
+.link__main {
+    height: 4rem;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 .3rem rgba(255, 255, 255, 0.5);
+    font-size: 3rem;
+    animation: a 1s infinite linear;
+    &:hover {
+        animation: none;
+        letter-spacing: 1rem;
+        text-shadow: 0 0 .5rem #fff;
+    }
+}
+@keyframes a {
+    0% { letter-spacing: .5rem; }
+    50% { letter-spacing: 1rem; }
+    100% { letter-spacing: .5rem; }
+}
+
+.ul__main {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+    list-style-type: none;
+}
+.li__main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    width: max-content;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    animation: fadeOut 8s ease-in-out forwards infinite;
+    &:nth-child(1) {
+        animation-delay: 0s;
+    }
+    &:nth-child(2) {
+        animation-delay: 1s;
+    }
+    &:nth-child(3) {
+        animation-delay: 2s;
+    }
+    &:nth-child(4) {
+        animation-delay: 3s;
+    }
+    &:nth-child(5) {
+        animation-delay: 4s;
+    }
+    &:nth-child(6) {
+        animation-delay: 5s;
+    }
+    &:nth-child(7) {
+        animation-delay: 6s;
+    }
+    &:nth-child(8) {
+        animation-delay: 7s;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .h__main {
+        margin: 4rem 0 0 0 ;
+        font-size: 3.5rem;
+        letter-spacing: 2rem;
+        line-height: 5rem;
+    }
+}
+

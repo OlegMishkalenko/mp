@@ -1,0 +1,30 @@
+.container__video {
+    @include container;
+}
+.block__video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: .5rem 0;
+    list-style-type: none;
+}
+.li__video {
+    width: 100vmax;
+    height: 100vmax; 
+    max-width: 40rem;
+    max-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include element;
+}
+.iframe__video {
+    border-radius: .5rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.btn__video {
+    align-self: center;
+}

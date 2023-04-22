@@ -1,0 +1,60 @@
+.section__order {
+    margin-top: 5rem;
+    background: url("../../img/order.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.from__order {
+    padding: 4rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(.5rem);
+    background-color: rgba(0, 0, 0, 0.5);
+    h2 {
+        text-transform: uppercase;
+    }
+}
+.inp__order {
+    background: none;
+    font-size: 1.8rem;
+    border: none;
+    border-bottom: .1rem solid #ccc;
+    outline: none;
+    color: aliceblue;
+    width: calc( 100% - 2rem);
+    max-width: 40rem;
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+    font-weight: 300;
+    &::placeholder {
+        color: rgb(255, 255, 255);
+    }
+}
+.ta__order {
+    width: calc( 100% - 2rem);
+    height: 10rem;
+    padding: 1rem;
+    max-width: 40rem ;
+    outline: none;
+    background: none;
+    color: aliceblue;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    border-bottom: .1rem solid #ccc;
+    resize: none;   
+    font-weight: 300; 
+    &::placeholder {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.btn__order {
+    margin: 2rem 0;
+    @include btn;
+}

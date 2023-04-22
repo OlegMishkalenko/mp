@@ -1,0 +1,40 @@
+
+
+.container__photo {
+    @include container;
+}
+.block__photo {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.li__photo {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .1s;
+    img {
+        width: 100%;
+        object-fit: cover;
+        @include element;
+    }
+    &:hover {  
+        transform: translate( -.2rem, -.4rem);
+    }
+}
+.btn__photo {
+    align-self: center;
+}
+
+@media screen and (min-width: 300px) {
+    .li__photo {
+        width: 24rem;
+        height: 24rem;
+    } 
+}
